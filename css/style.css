@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 10/16 = 0.625 = 62.5%, Now 1rem = 10px */
+}
+
+body {
+  font-family: "Rubik";
+  line-height: 1;
+  font-weight: 600;
+  color: #555;
+}
+
+/* REUSABLE✅✅✅ */
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+/* ⛔⛔⛔ */
+
+/* HERO✅✅✅ */
+.hero-head {
+  background-image: url(../Resources/assets/Hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 96vh;
+  margin: 0.6rem;
+  border: 1.6px solid rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  gap: 4rem;
+}
+
+.hero img {
+  width: 20rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.hero h2 {
+  font-size: 3.4rem;
+  line-height: 1.05;
+  text-align: center;
+  text-shadow: 1.2px 1.2px 0.8px rgba(60, 60, 60, 0.6);
+  opacity: 0.95;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+  width: 50%;
+  text-align: center;
+  opacity: 0.9;
+  margin-bottom: 4rem;
+}
+
+.hero a:link,
+.hero a:visited {
+  background-color: rgba(129, 128, 128, 0.4);
+  color: rgba(19, 94, 140, 0.8);
+  text-shadow: 0 0.2rem 0.3rem rgba(15, 48, 117, 0.6);
+  display: inline-block;
+  font-size: 2.2rem;
+  padding: 1.6rem 3rem;
+  border-radius: 1.4rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: 3px solid rgba(107, 108, 109, 0.6);
+}
+
+.hero a:hover,
+.hero a:active {
+  background-color: rgba(202, 202, 202, 0.6);
+}
+/* ⛔⛔⛔ */
+
+/* WHY WEB DEV✅✅✅ */
+.why {
+  margin-top: 14rem;
+  height: 900px;
+}
+
+.why-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.why-head h2 {
+  font-size: 3.2rem;
+  line-height: 1.05;
+  text-align: center;
+  opacity: 0.95;
+}
+
+.why-head p {
+  font-size: 1.6rem;
+  letter-spacing: -0.5px;
+  width: 70%;
+  text-align: center;
+  opacity: 0.9;
+  margin-bottom: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  align-items: center;
+}
+
+.why--text-box h3 {
+  font-size: 2.6rem;
+  line-height: 1.05;
+  opacity: 0.95;
+}
+
+.why--text-box p {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.05;
+  opacity: 0.95;
+  width: 95%;
+}
+
+.why--text-box a:link,
+.why--text-box a:visited {
+  background-color: rgba(216, 216, 216, 0.4);
+  color: rgba(19, 94, 140, 0.6);
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 1rem 1.2rem;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: 2px solid rgba(107, 108, 109, 0.6);
+  margin-top: 2rem;
+}
+
+.why--text-box a:active,
+.why--text-box a:hover {
+  background-color: rgba(180, 180, 180, 0.6);
+}
+
+.why--img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ⛔⛔⛔ */
