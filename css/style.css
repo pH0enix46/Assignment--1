@@ -317,7 +317,6 @@ body {
 /* ⛔⛔⛔ */
 
 /* SUPPORT✅✅✅ */
-
 .support {
   margin-bottom: 10rem;
 }
@@ -412,6 +411,7 @@ input::placeholder {
 /* FOOTER✅✅✅ */
 .footer {
   background-color: rgba(13, 19, 33, 0.03);
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 .footer > div {
