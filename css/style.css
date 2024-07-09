@@ -7,6 +7,10 @@
 html {
   font-size: 62.5%;
   /* 10/16 = 0.625 = 62.5%, Now 1rem = 10px */
+
+  /* Maybe doesn't work on Safari */
+  scroll-behavior: smooth;
+  overflow-y: auto;
 }
 
 body {
@@ -91,7 +95,6 @@ body {
 /* WHY WEB DEV✅✅✅ */
 .why {
   margin-top: 14rem;
-  height: 900px;
 }
 
 .why-head {
@@ -124,6 +127,7 @@ body {
   column-gap: 6.4rem;
   row-gap: 9.6rem;
   align-items: center;
+  padding: 0.4rem;
 }
 
 .why--text-box h3 {
@@ -164,5 +168,267 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+/* ⛔⛔⛔ */
+
+/* INSPIRE✅✅✅ */
+.inspire {
+  margin-top: 16rem;
+  margin-bottom: 16rem;
+}
+
+.inspire-head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.inspire-head h2 {
+  font-size: 2.8rem;
+  line-height: 1.05;
+  opacity: 0.95;
+}
+
+.inspire-head p {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.05;
+  opacity: 0.95;
+  width: 80%;
+  text-align: center;
+}
+
+.inspire--video {
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inspire--video iframe {
+  width: 70rem;
+  height: 40rem;
+  border-radius: 1.5rem;
+  padding: 0.6rem;
+  border: 6px solid rgba(92, 92, 91, 0.6);
+}
+/* ⛔⛔⛔ */
+
+/* CURRENT✅✅✅ */
+.current {
+  margin-bottom: 10rem;
+}
+
+.current-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.current-head h2 {
+  font-size: 2.8rem;
+  line-height: 1.05;
+  opacity: 0.95;
+}
+
+.current-head p {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.05;
+  opacity: 0.95;
+  width: 80%;
+  text-align: center;
+}
+
+.current-content {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.step {
+  padding: 4rem 3.2rem;
+  width: 80%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.5rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2) inset;
+}
+
+.step span {
+  margin-top: -1.6rem;
+  font-size: 2rem;
+  line-height: 1.05;
+  opacity: 0.95;
+}
+
+.step p {
+  font-size: 1.3rem;
+  line-height: 1.05;
+  opacity: 0.95;
+}
+
+.step a:link,
+.step a:visited {
+  background-color: rgba(216, 216, 216, 0.4);
+  color: rgba(19, 94, 140, 0.6);
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 1rem 1.2rem;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: 2px solid rgba(107, 108, 109, 0.6);
+  margin-top: 2rem;
+  margin-top: -1rem;
+}
+
+.step a:active,
+.step a:hover {
+  background-color: rgba(180, 180, 180, 0.6);
+}
+
+.step img {
+  margin-left: -0.8rem;
+}
+
+.step-1 {
+  background: rgba(255, 76, 30, 0.05);
+}
+
+.step-2 {
+  background: rgba(0, 76, 232, 0.05);
+}
+
+.step-3 {
+  background: rgba(255, 223, 0, 0.05);
+}
+/* ⛔⛔⛔ */
+
+/* SUPPORT✅✅✅ */
+
+.support {
+  margin-bottom: 10rem;
+}
+
+.support--content {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../Resources/assets/handshake.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 31rem;
+  border-radius: 1.6rem;
+
+  padding: 4rem;
+}
+
+.support--content > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 6rem;
+  margin-top: 4rem;
+}
+
+.support--content > div h3 {
+  font-size: 3rem;
+  line-height: 1.05;
+  opacity: 0.95;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1.2px 1.2px 1px rgba(0, 0, 0, 0.8);
+}
+
+.support--content > div p {
+  font-size: 1.8rem;
+  line-height: 1.05;
+  opacity: 0.8;
+  color: rgba(125, 230, 200, 0.9);
+  text-shadow: 1.2px 1.2px 1px rgba(0, 0, 0, 0.8);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.form input {
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(179, 178, 178, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(187, 185, 185, 0.6);
+  transition: all 0.3s;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.submit {
+  flex-grow: 0;
+  flex-basis: 10rem;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: rgba(179, 178, 178, 0.5);
+}
+
+.feedback {
+  flex-grow: 1;
+}
+
+.support *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem rgba(253, 242, 233, 0.4);
+}
+/* ⛔⛔⛔ */
+
+/* FOOTER✅✅✅ */
+.footer {
+  background-color: rgba(13, 19, 33, 0.03);
+}
+
+.footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+
+.footer > div h3 {
+  font-size: 1.6rem;
+  line-height: 1.05;
+  opacity: 0.95;
+}
+
+.footer-img {
+  display: flex;
+  gap: 1rem;
 }
 /* ⛔⛔⛔ */
