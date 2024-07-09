@@ -37,6 +37,10 @@ body {
   margin: 0.6rem;
   border: 1.6px solid rgba(0, 0, 0, 0.4);
   border-radius: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero {
@@ -65,10 +69,10 @@ body {
 .hero p {
   font-size: 1.8rem;
   letter-spacing: -0.5px;
-  width: 50%;
+  width: 60%;
   text-align: center;
   opacity: 0.9;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .hero a:link,
